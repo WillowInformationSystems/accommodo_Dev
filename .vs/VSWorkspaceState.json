@@ -1,11 +1,14 @@
 {
   "ExpandedNodes": [
     "",
-    "\\intelli-vasapi-master",
-    "\\intelli-vasapi-master\\config",
-    "\\intelli-vasapi-master\\lib",
-    "\\intelli-vasapi-master\\routes"
+    "\\config",
+    "\\config\\database",
+    "\\lib",
+    "\\lib\\connect",
+    "\\routes",
+    "\\routes\\customers",
+    "\\routes\\landlords"
   ],
-  "SelectedNode": "\\intelli-vasapi-master",
+  "SelectedNode": "\\routes",
   "PreviewInSolutionExplorer": false
 }
