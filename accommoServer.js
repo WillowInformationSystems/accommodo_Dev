@@ -13,7 +13,7 @@ require( 'dotenv' ).config();
 // better abstraction
 
 // this is a thing for docker
-const HOST = '0.0.0.0';
+const HOST = '127.0.0.1';
 
 app.use( bodyParser.urlencoded( {
     extended: false
@@ -30,20 +30,14 @@ app.use( logger( 'dev' ) );
 app.use( helmet() )
 
 const connect = require( './lib/connect' );
-const orders = require( './routes/orders' );
 const customers = require( './routes/customers' );
-const products = require( './routes/products' );
-const employers = require( './routes/employers' );
 const signin = require( './routes/signin' );
-const categories = require( './routes/categories' );
+const landlords = require('./routes/landlords');
 
 
 app.use( connect.connect );
-app.use( '/orders', orders );
+app.use( '/landlords', landlords );
 app.use( '/customers', customers );
-app.use( '/products', products );
-app.use( '/categories', categories );
-app.use( '/employers', employers );
 app.use( '/signin', signin );
 
 app.use( connect.close );
