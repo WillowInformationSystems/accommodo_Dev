@@ -1,0 +1,38 @@
+{
+  "name": "accomodo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "accomodoApiServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node accomodoApiServer.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillowInformationSystems/Accomodo.git"
+  },
+  "keywords": [
+    "vas"
+  ],
+  "author": "Gareth Miller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WillowInformationSystems/Accomodo/issues"
+  },
+  "homepage": "https://github.com/WillowInformationSystems/Accomodo#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "cross-fetch": "^2.2.2",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.0",
+    "node-rest-client": "^3.1.0",
+    "rethinkdb": "^2.3.3",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "uuid": "^3.3.2"
+  }
+}
