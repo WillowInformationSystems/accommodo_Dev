@@ -1,3 +1,5 @@
+//PROPERTIES
+
 const express = require('express')
 const r = require('rethinkdb');
 const router = express.Router();
@@ -23,6 +25,24 @@ router.put('/:propertyId', function (req, res) {
         if (err) throw err
         res.send(retData)
     })
+})
+
+router.get('/:propertyId', function (req, res) {
+    var p = req.params.propertyId
+    if (req.query.filter && req.query.filter.hasOwnProperty('id')) {
+
+        //{ filter: '{}', range: '[0,9]', sort: '["name","ASC"]' }
+        r.db('accommodo').table('listings').get(p).run(req._rdb, function (err, retData) {
+            if (err) throw err
+            res.send(retData)
+        })
+    } else {
+        //{ filter: '{}', range: '[0,9]', sort: '["name","ASC"]' }
+        r.db('accommodo').table('listings').get(p).run(req._rdb, function (err, retData) {
+            if (err) throw err
+            res.send(retData)
+        })
+    }
 })
 
 
