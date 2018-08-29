@@ -7,8 +7,9 @@
     "\\lib\\connect",
     "\\routes",
     "\\routes\\customers",
-    "\\routes\\landlords"
+    "\\routes\\landlords",
+    "\\routes\\signin"
   ],
-  "SelectedNode": "\\routes",
+  "SelectedNode": "\\routes\\landlords\\index.js",
   "PreviewInSolutionExplorer": false
 }

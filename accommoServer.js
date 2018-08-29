@@ -33,10 +33,12 @@ const connect = require( './lib/connect' );
 const customers = require( './routes/customers' );
 const signin = require( './routes/signin' );
 const landlords = require('./routes/landlords');
+const properties = require('./routes/properties');
 
 
 app.use( connect.connect );
-app.use( '/landlords', landlords );
+app.use('/landlords', landlords);
+app.use('/properties', properties);
 app.use( '/customers', customers );
 app.use( '/signin', signin );
 
