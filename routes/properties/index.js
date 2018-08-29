@@ -14,4 +14,16 @@ router.post('/', function (req, res) {
     })
 })
 
+// PUT
+router.put('/:propertyId', function (req, res) {
+    var p = req.params.propertyId;
+    var updateInfo = req.body;
+    //{ filter: '{}', range: '[0,9]', sort: '["name","ASC"]' }
+    r.db('accommodo').table('listings').get(p).update(updateInfo).run(req._rdb, function (err, retData) {
+        if (err) throw err
+        res.send(retData)
+    })
+})
+
+
 module.exports = router;
