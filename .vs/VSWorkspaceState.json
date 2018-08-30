@@ -8,7 +8,7 @@
     "\\routes",
     "\\routes\\customers",
     "\\routes\\landlords",
-    "\\routes\\signin"
+    "\\routes\\properties"
   ],
   "SelectedNode": "\\routes\\landlords\\index.js",
   "PreviewInSolutionExplorer": false

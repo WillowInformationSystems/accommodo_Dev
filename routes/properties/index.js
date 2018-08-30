@@ -27,6 +27,7 @@ router.put('/:propertyId', function (req, res) {
     })
 })
 
+//GET
 router.get('/:propertyId', function (req, res) {
     var p = req.params.propertyId
     if (req.query.filter && req.query.filter.hasOwnProperty('id')) {
